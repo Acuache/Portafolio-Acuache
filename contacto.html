@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <script src="assets/js/map.js" defer></script>
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/menu.js" defer></script>
+</head>
+<body>
+    <!-- Layout Principal -->
+    <div class="layout">
+        <!-- Barra Lateral (info usuario) -->
+        <aside class="layout__user-info">
+            <!-- Información General usuario -->
+            <figure class="user-info__container-img">
+                <img class="user-info__img" src="assets/img/default-user.jpg">
+            </figure>
+            <article class="user-info__info">
+                <h2 class="info__name">Michael Acuache</h2>
+                <h4 class="info__job">Desarrollador Web</h4>
+                <!-- Información General usuario -- Links Redes sociales-->
+                <div class="info__links">
+                    <ul class="links__social">
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- Menú de navegación -->
+            <nav class="user-info__menu">
+                <ul class="menu__list">
+                    <li class="menu__option">
+                        <a class="menu__link" href="index.html">
+                            <i class="menu__icon fa-solid fa-house"></i>
+                            <span class="menu__overlay">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="sobre-mi.html">
+                            <i class="menu__icon fa-solid fa-user"></i>
+                            <span class="menu__overlay">Sobre mi</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="curriculum.html">
+                            <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                            <span class="menu__overlay">Curriculum</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="portafolio.html">
+                            <i class="menu__icon fa-solid fa-briefcase"></i>
+                            <span class="menu__overlay">Portafolio</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link link--active" href="contacto.html">
+                            <i class="menu__icon fa-solid fa-envelope"></i>
+                            <span class="menu__overlay">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón del cv  -->
+            <a class="user-info__btn" href="#">Descargar CV</a>
+            <!-- Píe de Página -->
+            <footer class="user-info__footer">
+                <p class="footer__content">&copy; 2025 Michael Acuache</p>
+            </footer>   
+        </aside>
+
+        <!-- Menú responsive -->
+        <div class="layout__menu-toggle">
+            <i class="layout__menu-toggle fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Contenido Principal -->
+        <main class="layout__content">
+            <section class="content__about">
+                <header class="about__header">
+                    <h1 class="about__title">Contacto</h1>
+                </header>
+                <section class="container__contact">
+                    <section class="contact__info">
+                        <article class="contact__data">
+                            <i class="contact__icon fa-solid fa-location-dot"></i>
+                            <h2 class="contact__subtitle">Ica - Perú</h2>
+                        </article>
+                        <article class="contact__data">
+                            <i class="contact__icon fa-solid fa-phone"></i>
+                            <h2 class="contact__subtitle">934 647 024</h2>
+                        </article>
+                        <article class="contact__data">
+                            <i class="contact__icon fa-solid fa-envelope"></i>
+                            <h2 class="contact__subtitle">v.acuache15@gmail.com</h2>
+                        </article>
+                        <article class="contact__data">
+                            <i class="contact__icon fa-solid fa-circle-check"></i>
+                            <h2 class="contact__subtitle">Desarrollador Web</h2>
+                        </article>
+                    </section>
+                    <section class="contact__form-box">
+                        <div class="contact__map">
+                            <!-- Efecto carga -->
+                            <div class="loader"></div>
+
+                            <!-- Mejor carga para el iframe con js -->
+                        </div>
+                        <header class="contac__form-header">
+                            <h3 class="contact__title">¿Como Puedo <span class="title__color">Ayudarte?</span></h3>
+                        </header>
+                        <form class="contact__form">
+                            <div class="form__container">
+                                <section class="form__details">
+                                    <article class="form__group">
+                                        <input class="form__input" id="name" type="text" placeholder="." required>
+                                        <label class="form__label" for="name">Nombre</label>
+                                    </article>
+                                    <article class="form__group">
+                                        <input class="form__input" id="email" type="email" placeholder="." required>
+                                        <label class="form__label" for="email">Email</label>
+                                    </article>
+                                    <article class="form__group">
+                                        <input class="form__input" id="subject" type="text" placeholder="." required>
+                                        <label class="form__label" for="subject">Asunto</label>
+                                    </article>
+                                </section>
+                                <section class="form__description">
+                                    <div class="form__group group--textarea">
+                                        <textarea class="form__input input--textarea" id="message" placeholder="." required></textarea>           
+                                        <label class="form__label label--textarea" for="message">Mensaje</label>
+                                    </div>
+                                </section> 
+                            </div>
+                            <input class="input__button" type="submit" value="Enviar Mensaje">
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+.content__about{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    padding: 5rem;
+    padding-right: 2.5rem;
+}
+.about__header {
+    margin-bottom: 4.5rem;
+}
+.about__title {
+    font-size: 3.2rem;
+    width: fit-content;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.about__title::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    z-index: -1;
+    top: 80%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+}
+.container__contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+}
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact__data{
+    width: 100%;;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fcfcfc;
+    border: 1px solid var(--color-subtitle);
+}
+.contact__icon{
+    font-size: 3.3rem;
+    color: var(--color-secondary);
+}
+.contact__subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.contac__form-header{
+    margin-top: 4rem;
+    margin-bottom: 3.2rem ;
+}
+.contact__title{
+    font-size: 2.2rem;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+}
+.title__color{
+    color: var(--color-secondary);
+}
+.title__color::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    z-index: -1;
+    top: 77%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+}
+.form__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.form__details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.form__group{
+    width: 100%;
+    position: relative;
+}
+.form__label{
+    transition: all 300ms linear;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+.form__input:focus ~ .form__label{
+    top: -50%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+/* Label del textarea posicionamiento */
+.label--textarea{
+    top: 5%;
+    left: 4.5%;
+}
+.form__input:focus ~ .label--textarea{
+    top: -11.5%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+
+/* Cuando hay valores en los input, el label se quede arriba (POR ESO SE PUSO placeholder=".")*/
+.form__input:not(:placeholder-shown)~.form__label{
+    top: -50%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+.form__input:not(:placeholder-shown)~.label--textarea{
+    top: -11.5%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+
+.form__input::placeholder {
+    color: transparent;
+}
+.form__input{
+    width: 100%;
+    display: block;
+    border: 0.2rem solid var(--color-background);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    box-shadow: 0 1rem 1rem -0.8rem rgba(0, 0, 0, 0.1);
+}
+.form__input:focus{
+    border-color: var(--color-secondary);
+}
+.group--textarea{
+    height: 17rem;
+}
+.input--textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+.input__button {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-secondary);
+    border-radius: 3rem;
+    color: var(--colo-title);
+    background-color: var(--color-principal);
+    box-shadow: 0 1rem 1rem -0.8rem rgba(0,0,0, 0.22);
+    transition: all 300ms linear;
+}
+.input__button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+}
+.contact__map{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__iframe{
+    width: 100%;
+    height: 100%;
+}

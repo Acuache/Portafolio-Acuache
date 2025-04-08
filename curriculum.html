@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="assets/css/curriculum.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/menu.js" defer></script>
+</head>
+<body>
+    <!-- Layout Principal -->
+    <div class="layout">
+        <!-- Barra Lateral (info usuario) -->
+        <aside class="layout__user-info">
+            <!-- Información General usuario -->
+            <figure class="user-info__container-img">
+                <img class="user-info__img" src="assets/img/default-user.jpg">
+            </figure>
+            <article class="user-info__info">
+                <h2 class="info__name">Michael Acuache</h2>
+                <h4 class="info__job">Desarrollador Web</h4>
+                <!-- Información General usuario -- Links Redes sociales-->
+                <div class="info__links">
+                    <ul class="links__social">
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- Menú de navegación -->
+            <nav class="user-info__menu">
+                <ul class="menu__list">
+                    <li class="menu__option">
+                        <a class="menu__link" href="index.html">
+                            <i class="menu__icon fa-solid fa-house"></i>
+                            <span class="menu__overlay">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="sobre-mi.html">
+                            <i class="menu__icon fa-solid fa-user"></i>
+                            <span class="menu__overlay">Sobre mi</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link link--active" href="curriculum.html">
+                            <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                            <span class="menu__overlay">Curriculum</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="portafolio.html">
+                            <i class="menu__icon fa-solid fa-briefcase"></i>
+                            <span class="menu__overlay">Portafolio</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="contacto.html">
+                            <i class="menu__icon fa-solid fa-envelope"></i>
+                            <span class="menu__overlay">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón del cv  -->
+            <a class="user-info__btn" href="#">Descargar CV</a>
+            <!-- Píe de Página -->
+            <footer class="user-info__footer">
+                <p class="footer__content">&copy; 2025 Michael Acuache</p>
+            </footer>   
+        </aside>
+
+        <!-- Menú responsive -->
+        <div class="layout__menu-toggle">
+            <i class="layout__menu-toggle fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Contenido Principal -->
+        <main class="layout__content">
+            <section class="content__resume content__about">
+                <header class="resume__header">
+                    <h1 class="resume__title">Curriculum</h1>
+                </header>
+                <section class="resume__content">
+                    <section class="resume__container">
+                        <section class="container__life">
+                            <article class="life__formation">
+                                <header class="life__header">
+                                    <h2 class="life__title">Formación</h2>
+                                </header>
+                            </article>
+                            <!-- Misma linea de tiempo -->
+                            <article class="container__timeline">
+                                <div class="timeline__option">
+                                    <div class="timeline__years">
+                                        <h3 class="years__title">2010</h3>
+                                        <p class="years__content">Universidad de Madrid</p>
+                                    </div>
+                                    <div class="timeline__separation"></div>
+                                    <div class="timeline__description">
+                                        <h3 class="description__title">Desarrollo Web</h3>
+                                        <p class="description__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quia sit. Deserunt, tempore quasi.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__option">
+                                    <div class="timeline__years">
+                                        <h3 class="years__title">2008</h3>
+                                        <p class="years__content">Universidad de Madrid</p>
+                                    </div>
+                                    <div class="timeline__separation"></div>
+                                    <div class="timeline__description">
+                                        <h3 class="description__title">Edición de video</h3>
+                                        <p class="description__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quia sit. Deserunt, tempore quasi.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <section class="container__experience">
+                            <article class="experience__formation">
+                                <header class="experience__header">
+                                    <h2 class="experience__title">Experiencia</h2>
+                                </header>
+                            </article>
+                            <!-- Misma linea de tiempo -->
+                            <article class="container__timeline">
+                                <div class="timeline__option">
+                                    <div class="timeline__years">
+                                        <h3 class="years__title">2015-2014</h3>
+                                        <p class="years__content">Google</p>
+                                    </div>
+                                    <div class="timeline__separation"></div>
+                                    <div class="timeline__description">
+                                        <h3 class="description__title">Desarrollador Web Senior</h3>
+                                        <p class="description__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quia sit. Deserunt, tempore quasi.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__option">
+                                    <div class="timeline__years">
+                                        <h3 class="years__title">2016-2022</h3>
+                                        <p class="years__content">Youtube</p>
+                                    </div>
+                                    <div class="timeline__separation"></div>
+                                    <div class="timeline__description">
+                                        <h3 class="description__title">Edición de video</h3>
+                                        <p class="description__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quia sit. Deserunt, tempore quasi.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+    
+                    <section class="resume__skills">
+                        <header class="skills__header">
+                            <h2 class="skills__title">Habilidades</h2>
+                        </header>
+                        <section class="skills__icons">
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/html.png">
+                                </figure>
+                                <p class="icons__name">HTML</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/css.png">
+                                </figure>
+                                <p class="icons__name">CSS</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/js.png">
+                                </figure>
+                                <p class="icons__name">JAVASCRIPT</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/react.png">
+                                </figure>
+                                <p class="icons__name">REACT</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/figma.png">
+                                </figure>
+                                <p class="icons__name">FIGMA</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/python.png">
+                                </figure>
+                                <p class="icons__name">PYTHON</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/sqlite.png">
+                                </figure>
+                                <p class="icons__name">SQLITE</p>
+                            </article>
+                            <article class="icons__container">
+                                <figure class="icons__container-img">
+                                    <img class="icons__icon" src="assets/img/git.png">
+                                </figure>
+                                <p class="icons__name">GIT</p>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="container__certificates">
+                    <article class="certificates__formation">
+                        <header class="certificates__header">
+                            <h2 class="certificates__title">Certificados</h2>
+                        </header>
+                    </article>
+                    <section class="certificates__items">
+                        <article class="certificates__certificate">
+                            <div class="certificate__container-img">
+                                <img class="certificate__img" src="assets/img/certificado-1.png">
+                            </div>
+                            <div class="certificate__description">
+                                <h3 class="certificate__title">Introducción a la programación en Python fácil y rápido</h3>
+                                <div class="certificate__details">
+                                    <p class="certificate__date">20 Enero 2024</p>
+                                    <a class="certificate__detail" href="#">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="certificates__certificate">
+                            <div class="certificate__container-img">
+                                <img class="certificate__img" src="assets/img/certificado-1.png">
+                            </div>
+                            <div class="certificate__description">
+                                <h3 class="certificate__title">TITULO DEL CERTITFICADO</h3>
+                                <div class="certificate__details">
+                                    <p class="certificate__date">FECHA</p>
+                                    <a class="certificate__detail" href="#">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="certificates__certificate">
+                            <div class="certificate__container-img">
+                                <img class="certificate__img" src="assets/img/certificado-1.png">
+                            </div>
+                            <div class="certificate__description">
+                                <h3 class="certificate__title">TITULO DEL CERTITFICADO</h3>
+                                <div class="certificate__details">
+                                    <p class="certificate__date">FECHA</p>
+                                    <a class="certificate__detail" href="#">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="certificates__certificate">
+                            <div class="certificate__container-img">
+                                <img class="certificate__img" src="assets/img/certificado-1.png">
+                            </div>
+                            <div class="certificate__description">
+                                <h3 class="certificate__title">TITULO DEL CERTITFICADO</h3>
+                                <div class="certificate__details">
+                                    <p class="certificate__date">FECHA</p>
+                                    <a class="certificate__detail" href="#">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

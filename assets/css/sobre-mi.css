@@ -1,0 +1,96 @@
+.link--active .menu__icon{
+    color: var(--color-secondary);
+}
+.content__about{
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    padding: 5rem;
+    padding-right: 2.5rem;
+}
+.about__header {
+    margin-bottom: 4.5rem;
+}
+.about__title{
+    font-size: 3.2rem;
+}
+.title__color {
+    color: var(--color-secondary);
+    width: fit-content;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.title__color::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    top: 79%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+}
+.about__personal-info{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem;
+}
+.personal-info__bio{
+    flex-basis: 57%;
+    text-align: justify;
+}
+.personal-info__description{
+    font-size: 1.5rem;
+}
+.person-info__data{
+    flex-basis: 43%;
+}
+.person-info__option{
+    margin-bottom: 1.2rem;
+}
+.personal-info__title{
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 12rem;
+    position: relative;
+    margin-left: 0;
+}
+.personal-info__title::after {
+    content: ":";
+    position: absolute;
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+    top: 0;
+    left: 92%;
+}
+.services__title{
+    margin-top: 3.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+.service__icon{
+    color: var(--color-secondary);
+    font-size: 4rem;
+}
+.services__container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5rem;
+}
+.services__service{
+    flex-basis: calc(50% - 5rem);
+}
+.service__title{
+    margin: 0.7rem 0;
+    font-size: 1.8rem;
+}
+.service__description{
+    font-size: 1.5rem;
+    text-align: justify;
+}

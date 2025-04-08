@@ -1,0 +1,185 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+        <link rel="stylesheet" href="assets/css/sobre-mi.css">
+        <link rel="stylesheet" href="assets/css/scroll.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/menu.js" defer></script>
+    </head>
+    <body>
+        <!-- Layout Principal -->
+        <div class="layout">
+            <!-- Barra Lateral (info usuario) -->
+            <aside class="layout__user-info">
+                <!-- Información General usuario -->
+                <figure class="user-info__container-img">
+                    <img class="user-info__img" src="assets/img/default-user.jpg">
+                </figure>
+                <article class="user-info__info">
+                    <h2 class="info__name">Michael Acuache</h2>
+                    <h4 class="info__job">Desarrollador Web</h4>
+                    <!-- Información General usuario -- Links Redes sociales-->
+                    <div class="info__links">
+                        <ul class="links__social">
+                            <li class="social__opion">
+                                <a class="social__link" href="#">
+                                    <i class="social__icon fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social__opion">
+                                <a class="social__link" href="#">
+                                    <i class="social__icon fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social__opion">
+                                <a class="social__link" href="#">
+                                    <i class="social__icon fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- Menú de navegación -->
+                <nav class="user-info__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a class="menu__link" href="index.html">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link link--active" href="sobre-mi.html">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link" href="curriculum.html">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link" href="portafolio.html">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link" href="contacto.html">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Botón del cv  -->
+                <a class="user-info__btn" href="#">Descargar CV</a>
+                <!-- Píe de Página -->
+                <footer class="user-info__footer">
+                    <p class="footer__content">&copy; 2025 Michael Acuache</p>
+                </footer>   
+            </aside>
+
+            <!-- Menú responsive -->
+            <div class="layout__menu-toggle">
+                <i class="layout__menu-toggle fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Contenido Principal -->
+            <main class="layout__content">
+                <section class="content__about">
+                    <header class="about__header">
+                        <h1 class="about__title">Sobre <span class="title__color">Mi</span></h1>
+                    </header>
+                    <section class="about__personal-info">
+                        <article class="personal-info__bio">
+                            <p class="personal-info__description">Soy un desarrollador web en formación con pasión por crear soluciones digitales funcionales y estéticas. Me enfoco en dominar tecnologías clave como HTML, CSS, JavaScript y React, mientras exploro herramientas de diseño como Figma para construir experiencias de usuario intuitivas. Disfruto colaborar en proyectos donde pueda combinar lógica y creatividad, y siempre estoy buscando aprender nuevas tecnologías (como Python y SQL) para ampliar mis horizontes. Mi objetivo es crecer como profesional integral, aportando innovación y dedicación en cada desafío.</p>
+                        </article>
+                        <article class="person-info__data">
+                            <ul class="person-info__list">
+                                <li class="person-info__option">
+                                    <span class="personal-info__title">Edad</span>
+                                    <span class="personal-info__value">23</span>
+                                </li>
+                                <li class="person-info__option">
+                                    <span class="personal-info__title">País</span>
+                                    <span class="personal-info__value">Perú</span>
+                                </li>
+                                <li class="person-info__option">
+                                    <span class="personal-info__title">Correo</span>
+                                    <span class="personal-info__value">v.acuache15@gmail.com</span>
+                                </li>
+                                <li class="person-info__option">
+                                    <span class="personal-info__title">N° de celular</span>
+                                    <span class="personal-info__value">+51 934647024</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="about__services">
+                        <header class="services__header">
+                            <h3 class="services__title">Lo que <span class="title__color">Hago</span></h3>
+                        </header>
+                        <section class="services__container">
+                            <article class="services__service">
+                                <div class="service__container-icon">
+                                    <i class="service__icon fa-solid fa-code"></i>
+                                </div>
+                                <div class="service__content">
+                                    <h4 class="service__title">Programación</h4>
+                                    <p class="service__description">Aprendo y practico los fundamentos de la programación usando Python, JavaScript y SQL, enfocándome en desarrollar soluciones sencillas y entender la lógica detrás del código.</p>
+                                </div>
+                            </article>
+                            <article class="services__service">
+                                <div class="service__container-icon">
+                                    <i class="service__icon fa-solid fa-chalkboard-user"></i>
+                                </div>
+                                <div class="service__content">
+                                    <h4 class="service__title">Formación</h4>
+                                    <p class="service__description">Comprometido con mi crecimiento profesional, me mantengo en constante formación a través de mis estudios y cursos adicionales, lo que me ayuda a estar actualizado en nuevas tecnologías y metodologías.</p>
+                                </div>
+                            </article>
+                            <article class="services__service">
+                                <div class="service__container-icon">
+                                    <i class="service__icon fa-solid fa-computer"></i>
+                                </div>
+                                <div class="service__content">
+                                    <h4 class="service__title">Desarrollador Web</h4>
+                                    <p class="service__description">Aplico mis conocimientos en HTML, CSS, JavaScript y React para crear sitios web responsivos y funcionales, mejorando gradualmente mis habilidades en desarrollo front-end.</p>
+                                </div>
+                            </article>
+                            <article class="services__service">
+                                <div class="service__container-icon">
+                                    <i class="service__icon fa-solid fa-user-gear"></i>
+                                </div>
+                                <div class="service__content">
+                                    <h4 class="service__title">Desarrollador UX/UI</h4>
+                                    <p class="service__description">Exploro el diseño de interfaces y la experiencia de usuario utilizando herramientas como Figma, buscando siempre crear diseños intuitivos y estéticamente agradables que mejoren la interacción de los usuarios.</p>
+                                </div>
+                            </article>
+                            <article class="services__service">
+                                <div class="service__container-icon">
+                                    <i class="service__icon fa-solid fa-users-gear"></i>
+                                </div>
+                                <div class="service__content">
+                                    <h4 class="service__title">Colaboración en Proyectos</h4>
+                                    <p class="service__description">Me interesa trabajar en equipo y enfrentar nuevos retos. Disfruto de la dinámica de colaborar con otros, compartir ideas y aprender de la experiencia colectiva, utilizando Git para mantener un flujo de trabajo organizado.</p>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

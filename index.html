@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/menu.js" defer></script>
+</head>
+<body>
+    <!-- Layout Principal -->
+    <div class="layout">
+        <!-- Barra Lateral (info usuario) -->
+        <aside class="layout__user-info">
+            <!-- Información General usuario -->
+            <figure class="user-info__container-img">
+                <img class="user-info__img" src="assets/img/default-user.jpg">
+            </figure>
+            <article class="user-info__info">
+                <h2 class="info__name">Michael Acuache</h2>
+                <h4 class="info__job">Desarrollador Web</h4>
+                <!-- Información General usuario -- Links Redes sociales-->
+                <div class="info__links">
+                    <ul class="links__social">
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social__opion">
+                            <a class="social__link" href="#">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- Menú de navegación -->
+            <nav class="user-info__menu">
+                <ul class="menu__list">
+                    <li class="menu__option">
+                        <a class="menu__link link--active" href="index.html">
+                            <i class="menu__icon fa-solid fa-house"></i>
+                            <span class="menu__overlay">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="sobre-mi.html">
+                            <i class="menu__icon fa-solid fa-user"></i>
+                            <span class="menu__overlay">Sobre mi</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="curriculum.html">
+                            <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                            <span class="menu__overlay">Curriculum</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="portafolio.html">
+                            <i class="menu__icon fa-solid fa-briefcase"></i>
+                            <span class="menu__overlay">Portafolio</span>
+                        </a>
+                    </li>
+                    <li class="menu__option">
+                        <a class="menu__link" href="contacto.html">
+                            <i class="menu__icon fa-solid fa-envelope"></i>
+                            <span class="menu__overlay">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón del cv  -->
+            <a class="user-info__btn" href="#">Descargar CV</a>
+            <!-- Píe de Página -->
+            <footer class="user-info__footer">
+                <p class="footer__content">&copy; 2025 Michael Acuache</p>
+            </footer>   
+        </aside>
+
+        <!-- Menú responsive -->
+        <div class="layout__menu-toggle">
+            <i class="layout__menu-toggle fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Contenido Principal -->
+        <main class="layout__content">
+            <section class="content__index">
+                <h1 class="content__name">Michael Acuache</h1>
+                <h2 class="content__job">Desarrollador Web</h2>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

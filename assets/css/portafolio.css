@@ -59,3 +59,9 @@
     font-size: 1.5rem;
     margin-top: 0.5rem;
 }
+.project__link {
+    color: var(--color-secondary);
+}
+.project__link:hover{
+    color: #4f8aa3;
+}

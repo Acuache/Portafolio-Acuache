@@ -42,8 +42,22 @@
     flex-basis: calc(34% - 2rem);
 }
 .project__container-img{
+    height: 15rem;
     background-color: red;
     overflow: hidden;
+}
+.project__container-logo {
+    width: 100%;
+    margin: 1rem 0;
+}
+.container-logo__list{
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+.container__logo__item {
+    width: 3.2rem;
+    height: 3.2rem;
 }
 .project__img{
     width: 100%;

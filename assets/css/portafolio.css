@@ -43,7 +43,7 @@
 }
 .project__container-img{
     height: 15rem;
-    background-color: red;
+    background-color: gray;
     overflow: hidden;
 }
 .project__container-logo {

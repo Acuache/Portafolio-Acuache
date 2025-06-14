@@ -172,7 +172,14 @@
     .link--active .menu__overlay{
         text-decoration: underline;
     }
-    
+    .certificates__items {
+        flex-direction: column;
+    }
+    .certificates__certificate {
+        flex-basis: auto;
+        width: 100%;
+        height: 15rem;
+    }
 }
 
 @media (max-width:730px) {
